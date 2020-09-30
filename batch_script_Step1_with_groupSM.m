@@ -27,8 +27,8 @@ prefix = 'Demo';
 dataSelectionMethod = 4;
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Start for Method 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Input data file pattern for data-sets must be in a cell array. The no. of columns of cell array correspond to no. of subjects
-% and rows correspond to sessions. 
+% Input data file pattern for data-sets must be in a cell array. The no. of rows of cell array correspond to no. of subjects
+% and columns correspond to sessions. 
 
 
 % Enter TR in seconds. If TRs vary across subjects, TR must be a row vector of length equal to the number of subjects.
@@ -40,7 +40,7 @@ sub_name = dir(functional_main);
 Sub = length(sub_name); % number of subjects
 for s_sub = 1:Sub
     temp_file = sprintf('\\%s',sub_name(s_sub).name); % functional image folder
-    input_data_file_patterns(1,s_sub) = {temp_file};
+    input_data_file_patterns(s_sub,1) = {temp_file};
 end
 
 
