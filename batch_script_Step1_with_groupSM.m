@@ -40,7 +40,7 @@ sub_name = dir(functional_main);
 Sub = length(sub_name); % number of subjects
 for s_sub = 1:Sub
     temp_file = sprintf('\\%s',sub_name(s_sub).name); % functional image folder
-    input_data_file_patterns(s_sub) = {temp_file};
+    input_data_file_patterns(1,s_sub) = {temp_file};
 end
 
 
