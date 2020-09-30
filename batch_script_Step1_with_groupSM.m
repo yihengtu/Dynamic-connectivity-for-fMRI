@@ -27,10 +27,9 @@ prefix = 'Demo';
 dataSelectionMethod = 4;
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Start for Method 4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Input data file pattern for data-sets must be in a cell array. The no. of rows of cell array correspond to no. of subjects
-% and columns correspond to sessions. In the below example, there are 3
-% subjects and 1 session. If you have multiple sessions, please see
-% Input_data_subjects_2.m file.
+% Input data file pattern for data-sets must be in a cell array. The no. of columns of cell array correspond to no. of subjects
+% and rows correspond to sessions. 
+
 
 % Enter TR in seconds. If TRs vary across subjects, TR must be a row vector of length equal to the number of subjects.
 TR = 3;
